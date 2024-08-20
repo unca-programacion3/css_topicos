@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas relativas</title>
+    <style>
+        div {
+            border: 0.5rem solid red; /*ancho borde: 8px (fuente de html = 16px)*/
+            padding: 10px;
+            margin: 10px;
+            height: 50px;
+        }
+        .em {
+            font-size: 30px;
+            border: 0.5em solid red; /*ancho borde: 15px (fuente del elemento = 30px)*/
+        }
+        .fijo {
+            border: 0.5cm solid red;
+        }
+        .fijo div{
+            height: 25%; /*alto div: 12.5px (alto div heredado = 50px)*/
+            background-color: rgb(157, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div>Un div</div>
+    <div class="em">Un segundo div</div>
+    <div class="fijo">Tercer div
+        <div>muestra de porcentaje</div>
+    </div>
+</body>
+</html>

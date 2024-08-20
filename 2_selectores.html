@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Selectores CSS</title>
+        <style>
+            header a {
+                color:SteelBlue; 
+            }
+
+            input:focus {
+                background-color: lightblue;
+            }
+
+            input:invalid {
+                background-color: yellow;
+                border: 3px solid red;
+            }    
+
+            section#form-persona p {
+                color: white;
+                background-color: green;
+            } 
+            input[type="submit"] {
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            El texto de los links que se encuentren en sección “header” deben mostrarse en color “SteelBlue”
+            Establezca el color de fondo a "lightblue“ de los elementos input cuando reciban el foco. 
+            Cuando los valores sean inválidos, establecer el color de fondo en “yellow” y borde en “3px solid red”.
+            Para los parrafos dentro de una seccion con “id=form-persona”, mostrar color de fuente “white” y color de fondo “green” cuando se seleccione parte del texto del mismo.
+            Establecer color de fondo a “lightgreen” para elementos input del tipo “submit”.
+        -->
+        <header>
+            <h1> Curso práctico CSS </h1>
+            <small>Referencias: <a href="http://w3schools.com/">W3Schools</a></small>
+        </header>
+        <section id="form-persona">
+            <form action="#" method="get">
+                <label>Nombre: </label><input type="text" name="fname"><br>
+                <label>E-mail: </label><input  type="email" name="email"><br>
+                <input  type="submit" value="Submit">
+                <input  type="reset" value="Cancelar">
+            </form>   
+            <p>Este formulario se creó para recopilar los datos de la persona</p>
+        </section>
+    </body>
+</html>

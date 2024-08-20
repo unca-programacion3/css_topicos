@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidad</title>
+    <style>
+        /* la especificidad se aplica segun las prioridades:
+        1. inline (1000)
+        2. id (100)
+        3. clases (10)
+        4. elementos (etiqueta) (1)
+        */
+        div {
+            color: blue;
+        }
+
+        #foo {
+            color: red;    
+        }
+
+        .foo {
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Especificidad</h1>
+    <div style="font-size: 30px; color:cyan;" id="foo" class="foo">
+        Hola!
+    </div>
+</body>
+</html>
